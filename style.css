@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(242, 234, 226);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+.contain {
+    width: 590px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    margin: 7% auto;
+    border-radius: 10px;
+}
+
+.contain .img {
+    width: 50%;
+}
+
+.contain .img img {
+    border-radius: 10px 0 0 10px;
+}
+
+.contain .details {
+    width: 50%;
+    flex: auto;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+}
+
+.details .text {
+    margin: 0.5em 1.5em;
+    background-color: white;
+}
+
+.text .title {
+    color: rgb(131, 131, 131);
+    background-color: white;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.text .bigtitle {
+    background-color: white;
+}
+
+.text .det {
+    color: rgb(131, 131, 131);
+    background-color: white;
+    font-weight: 300;
+}
+
+.text .price {
+    background-color: white;
+    display: flex;
+}
+
+.price .aftersale {
+    background-color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(3, 97, 3);
+}
+
+.price .beforesale {
+    background-color: white;
+    text-decoration: line-through;
+    color: rgb(131, 131, 131);
+    padding: 1.75em;
+}
+
+.text .button {
+    background-color: rgb(3, 97, 3);
+    color: white;
+    border: none;
+    padding: 15px 75px;
+    border-radius: 5px;
+}
+
+.text .button:hover {
+    background-color: rgb(2, 61, 2);
+}
+
+@media screen and (max-width: 450px) {
+    .contain {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contain .img {
+        height: 260px;
+    }
+    .contain .img img {
+        height: auto;
+        width: 61.4%;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0;
+    }
+    .contain .details{
+        width: 61.4%;
+        border-radius: 0 0 10px 10px;
+    }
+    .price .beforesale {
+        padding: 1.75em 0.75em;
+    }
+    .text .button {
+        padding: 15px 50px;
+    }
+}
